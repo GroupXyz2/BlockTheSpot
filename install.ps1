@@ -1,9 +1,6 @@
 param (
   [Parameter()]
   [switch]
-  $UninstallSpotifyStoreEdition = 'n',
-  [Parameter()]
-  [switch]
   $UpdateSpotify
 )
 
@@ -293,4 +290,5 @@ Write-Host 'Patching Complete, starting Spotify...'
 
 Start-Process -WorkingDirectory $spotifyDirectory -FilePath $spotifyExecutable
 Write-Host 'Done.'
+
 
